@@ -77,4 +77,5 @@ footer {
 main{
     width: 940px;
     margin: 0;
+    justify-content: center;
 }
