@@ -1,0 +1,98 @@
+.cabeçalho {
+    background: center / cover url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5L5gPGF9TCP50xwlbNHhBGMjsNCQy96ezIHIVRMm4IdTHc6wsuwckjiaFubB1Fouhvzs&usqp=CAU);
+    display: flex;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 50%;
+    font: "Open Sans", sans-serif;
+    color: #ff0083;
+    text-shadow: #000 2px 2px 0.2rem;
+    border: 3px solid rgb(47, 50, 221);
+}
+.Seguir {
+    font-size: 50px;
+}
+body {
+    width: 97%;
+    height: 913px;
+    margin: 0 auto;
+    background-color: #73ecec;
+    padding: 0 20px 20px 20px;
+    border: 3px solid rgb(66, 69, 233);
+    background: center / cover url(cadastroback.jpeg);
+}
+html {
+    font-size: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+.Voltar {
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #5ec6e6;
+    text-shadow: 1px 1px 1px  black;
+}
+h2 {
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #7697ad;
+}
+.Conta {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+.Senha {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+.Cadastrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 80px;
+}
+.Confirmar {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+.Linha {
+    width: 380px;
+    margin-top: 70px;
+}
+button {
+    background-color: #89e2f8;
+    border: 5px solid #0a5a8f;
+    transition-duration: 0.3s;
+}
+nav a {
+    padding: 0 15px 0 0;
+}
+button a:visited {
+    color: blue;
+}
+nav a:hover {
+    color: #ca1140;
+}
+button:hover {
+    background-color: #ca1140;
+    text-decoration: underline;
+}
+button a:hover {
+    color: #ca1140;
+}
+button:active {
+    color: #ca1140;
+}
