@@ -20,7 +20,6 @@ body {
     margin: 0 auto;
     background-color: #73ecec;
     padding: 0 20px 20px 20px;
-    border: 3px solid rgb(66, 69, 233);
     background: center / cover url(cadastroback.jpeg);
 }
 html {
@@ -72,27 +71,9 @@ h2 {
     width: 380px;
     margin-top: 70px;
 }
-button {
-    background-color: #89e2f8;
-    border: 5px solid #0a5a8f;
-    transition-duration: 0.3s;
-}
 nav a {
     padding: 0 15px 0 0;
 }
-button a:visited {
-    color: blue;
-}
 nav a:hover {
-    color: #ca1140;
-}
-button:hover {
-    background-color: #ca1140;
-    text-decoration: underline;
-}
-button a:hover {
-    color: #ca1140;
-}
-button:active {
     color: #ca1140;
 }
