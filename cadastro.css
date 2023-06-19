@@ -282,3 +282,13 @@ button {
    background: rgb(0,3,255);
 background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
 }
+thead {
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td, th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}
