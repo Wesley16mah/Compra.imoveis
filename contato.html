@@ -5,39 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="contato.css">
 </head>
 <body>
     <p><a href="casa.html">←Voltar</a></p>
-    <fieldset>
-    <form>
-        <label for="nomesobrenome"> Nome e Sobrenome</label>
-        <input type="text" id="nomesobrenome" class="input-padrao" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"
-       
-        <label for="telefone">Telefone</label>
-        <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxxx-xxxx">
-
-        <label for="mensagem">Mensagem</label>
-        <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea required>
-
-        <legend>Como Prefere Ser Imcomodado</legend>
-        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label> 
-
-        <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
-
-        <label for="radio-zap"><input type="radio" name="contato" value="WhatsApp" id="radio-zap" checked>WhatsApp</label>
-
-        <fieldset>Qual horario vc vem?</legend>
-            <select>
-                <option>Manha</option>
-                <option>Tarde</option>
-                <option>Noite</option>
-            </select>    
-            </fieldset>
-    </fieldset>
+    <div class="container">
+        <form action="#" class="form-contact" method="post" tabindex="1">
+          <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required />
+          <input type="email" class="form-contact-input" name="email" placeholder="Email" required />
+          <input type="tel" class="form-contact-input" name="tel" placeholder="Telefone" />
+          <textarea class="form-contact-textarea" name="conteudo" placeholder="Deixe uma mensagem" required></textarea>
+          <button type="submit" class="form-contact-button">Enviar</button>
+        </form>
+      </div>
+      
+      <a href="https://twitter.com/lciceris_">@lciceris_</a>
+      <a href="https://www.lciceris.com.br/formulario-de-contato-responsivo">Post contact form responsive</a>
 
 </body>
 </html>
