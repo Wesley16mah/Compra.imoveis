@@ -64,3 +64,6 @@
   .form-contact-button:hover {
     opacity: 1;
   }
+  div {
+    display: block;
+}
