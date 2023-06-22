@@ -137,3 +137,13 @@
   .btn-3 span:hover:after {
     width: 100%;
   }
+  thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+  }
+
+  td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+  }
