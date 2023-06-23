@@ -4,79 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro de Imoveis</title>
+    <script src="appCadastro.js"></script>
 </head>
 <body>
-  <ul>
-    <button class="custom-btn btn-3"><a href="casa.html"><span>←Voltar</span></a></button>
-  </ul>
-  <div class="container" >
-    <a class="links" id="paracadastro"></a>
-    <a class="links" id="paralogin"></a>
-    
-    <div class="content">      
-      <!--FORMULÁRIO DE LOGIN-->
-      <div id="login">
-        <form method="post" action=""> 
-          <h1>Login</h1> 
-          <p> 
-            <label for="email_login">Seu e-mail</label>
-            <input id="email_login" name="email_login" required="required" type="text" placeholder="contato@htmlecsspro.com"/>
-          </p>
-          
-          <p> 
-            <label for="senha_login">Sua senha</label>
-            <input id="senha_login" name="senha_login" required="required" type="password" placeholder="1234" /> 
-          </p>
-          
-          <p> 
-            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
-            <label for="manterlogado">Manter-me logado</label>
-          </p>
-          
-          <p> 
-            <input type="submit" value="Logar" /> 
-          </p>
-          
-          <p class="link">
-            Ainda não tem conta?
-            <a href="#paracadastro">Cadastre-se</a>
-          </p>
-        </form>
-      </div>
+    <header>
+        <h1>Cadastro de Imóveis</h1>
+        <h5>Mansão, Apartamentos e Sobrado Aluga e Compra;</h5>
+    </header>
+    <div>
+        <form action="" id="register">
+        <p>Cadastro de Imóvel</p>
 
-      <!--FORMULÁRIO DE CADASTRO-->
-      <div id="cadastro">
-        <form method="post" action=""> 
-          <h1>Cadastro</h1> 
-          
-          <p> 
-            <label for="nome_cad">Seu nome</label>
-            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Luiz Augusto" />
-          </p>
-          
-          <p> 
-            <label for="email_cad">Seu e-mail</label>
-            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
-          </p>
-          
-          <p> 
-            <label for="senha_cad">Sua senha</label>
-            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="1234"/>
-          </p>
-          
-          <p> 
-            <input type="submit" value="Cadastrar"/> 
-          </p>
-          
-          <p class="link">  
-            Já tem conta?
-            <a href="#paralogin"> Ir para Login </a>
-          </p>
-        </form>
-      </div>
+        <p>
+            <label for="">Nome:</label>
+            <input type="text" name="phone" id="phone" placeholder="Joao de Lara">
+            <label for="">Fone:</label>
+            <input type="text" name="phone" id="phone" placeholder="(xx) 9 9999-9999">
+            <label for="">Email:</label>
+            <input type="text" name="phone" id="phone" placeholder="JoaodeLara@gmail.com">
+        </p>
+        
+        <hr>
+
+        <p>
+            <label for="">Tipo:</label>
+            <input type="radio" value="Casa" name="typeImovel" id="typeImovel">Mansão
+            <input type="radio" value="Apartamento" name="typeImovel" id="typeImovel">Apartamento
+            <input type="radio" value="Apartamento" name="typeImovel" id="typeImovel">Sobrado
+        </p>
+
+        <p>
+            <label for="">Área (m²)</label>
+            <input type="number" name="area" id="area">
+        </p>
+
+        <p>
+            <label for="">Alugado:</label>
+            <input type="radio" value="Alugado" name="rentedImovel" id="rentedImovel"/>Sim
+            <input type="radio" value="Aluga-se" name="rentedImovel" id="rentedImovel"/>Não
+        </p>
+
+        <p> 
+            <button type="button" onclick="addImovel()">Adicionar</button>
+        </p>
+        <hr>
+    </form>
     </div>
-  </div> 
+
+    <div>
+        <h3>Imoveis Cadastrados</h3>
+        <p>
+            <table name="tableImovel" border="1">
+                <thead>
+                    <tr>
+                        <th>Alugado</th>
+                        <th>Tipo Imóvel</th>
+                        <th>Area Imóvel</th>
+                        <th>Nome Proprietário</th>
+                        <th>Fone</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody id="listImovel">
+                
+                </tbody>
+            </table>
+        </p>
+    </div>
+    <hr>
+    <footer>
+        <p>Site completo para alugueis de Casas e Apartamentos</p>
+    </footer>
+    
+    
 </body>
 </html>
